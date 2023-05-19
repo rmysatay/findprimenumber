@@ -12,6 +12,10 @@ public class findprimenumbers {
     public void primenumber(int i) {
         int a=0;
         int b=0;
+        if(i<2){
+            System.out.println(i+" asal değildir.");
+            return;
+        }
         for(int j=2;j<=i;j++){
             if(i%j==0){
                 a++;
